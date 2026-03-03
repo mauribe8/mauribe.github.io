@@ -1,3 +1,11 @@
+form {
+    border: 3px solid #7c5cc4;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(124, 92, 196, 0.12), 0 1.5px 6px rgba(0,0,0,0.07);
+    padding: 2em 1.5em;
+    background: #faf8ff;
+    margin-bottom: 2em;
+}
 /* Pan detail page layout */
 .pan-detail-layout {
     display: flex;
@@ -56,7 +64,7 @@
 nav {
     display: flex;
     flex-direction: column;
-    background: var(--color-accent);
+    background: #3A7599; /* blue shade */
     min-width: 180px;
     border-right: 2px solid var(--color-secondary);
 }
@@ -71,7 +79,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: #654574;
+    background: #919090; /* light gray */
     padding: 1rem 0;
     width: 100%;
 }
@@ -160,8 +168,8 @@ h2 {
     --color-text: #050315;
     --color-background: #e4e4e4;
     --color-primary: #dd1515;
-    --color-secondary: #7b4545;
-    --color-accent: #654574;
+    --color-secondary: #03A7599;
+    --color-accent: #73CF67; 
 }
 body {
     font-family: Arial, sans-serif;
@@ -185,7 +193,7 @@ nav.topnav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: var(--color-accent);
+    background: #B8860B; /* dark goldenrod */
     border-bottom: 2px solid var(--color-secondary);
     border-right: none;
     min-width: 0;
@@ -213,7 +221,12 @@ nav a {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     margin-bottom: 0.5rem;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+nav a:hover {
+    background: #e0d6f6;
+    color: #3a185c;
+    box-shadow: 0 2px 12px rgba(124, 92, 196, 0.12);
 }
 
 main {
